@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital@1&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	overflow: hiddgen;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 18px;
+ }
+
+ .bg-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover, repeat;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: brightness(30%);
+}
+
+
+h2 {
+	margin-bottom: 100px;
+	opacity: 0;
+}
+ 
+.parameters-c {
+	margin-top: 100px;
+	width: 100vw;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	position: relative;
+	
+	
+}
+
+.outer	{
+	height:170px;
+	width: 170px;
+	border-radius: 50%;
+	padding: 25px;
+	box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+				-6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner {
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+				inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+				-0.5px -0.5px 0px rgba(255,255,255,1),
+				0.5px 0.5px 0px rgba(0,0,0,0.15),
+				0px 12px 10px -10px rgba(0,0,0,0.5);
+ 
+
+}
+
+.acceleration-ship, .throttle-ship { 
+
+	margin-top: 50px;
+}
+
+circle {
+
+	fill: none;
+	stroke: url(#GradientColor);
+	stroke-width: 20px;
+	stroke-dasharray: 472;
+	stroke-dashoffset: 472;
+	animation: anim 2s linear forwards;
+
+}
+
+
+
+@keyframes anim{
+	100%{
+		stroke-dashoffset: 0;
+	}
+}
+
+.effect	{
+	position: absolute;
+	top: 5px;
+	left: 881px;
+}
+
+.effect2	{
+	position: absolute;
+	left: 360px;
+	top: 5px;
+
+}
+
+.effect3	{
+	position: absolute;
+	top: 5px;
+	left: 1404px;
+}
+
+.effect4	{
+	position: absolute;
+	left: 350px;
+	margin-top: 3px;
+	margin-left: 7.5px;
+
+}
+
+.effect5	{
+	position: absolute;
+	margin-top: 3px;
+
+
+
+}
+
+.effect6	{
+	position: absolute;
+	margin-top: 3px;
+	margin-left: 2px;
+	left: 1400px;
+	
+
+
+}
+
+.effect7 	{
+	position: absolute;
+	margin-left: 2px;
+	top: 630px;
+	left: 876px;
+	
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.ship-parameters {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
+    text-align: center;
+
+
+
+
+
+}
+
+.ship-eviroment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+
+
+}
+
+
+
+.ship-supplies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 50px;
+    padding-bottom: 50px;
+
+
+};
+
+
+
